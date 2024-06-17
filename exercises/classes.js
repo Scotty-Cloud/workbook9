@@ -6,16 +6,16 @@ class Employee {
     this.jobTitle = jobTitle;
     this.payRate = payRate;
   }
-
+  //exercise 1
   get fullName() {
     return `${this.firstName} ${this.lastName}`;
   }
-
+  //exercise 3
   getIntro() {
     let intro = `Hi! I'm ${this.fullName} and I am a ${this.jobTitle}`;
     return intro;
   }
-
+  //exercise 2
   promote(newJobTitle, newPayRate) {
     this.jobTitle = newJobTitle;
     this.payRate = newPayRate;
