@@ -11,6 +11,11 @@ class Employee {
     return `${this.firstName} ${this.lastName}`;
   }
 
+  getIntro() {
+    let intro = `Hi! I'm ${this.fullName} and I am a ${this.jobTitle}`;
+    return intro;
+  }
+
   promote(newJobTitle, newPayRate) {
     this.jobTitle = newJobTitle;
     this.payRate = newPayRate;
@@ -18,9 +23,11 @@ class Employee {
 }
 
 let employee1 = new Employee(1, "Ian", "Auston", "Graphic Artist", 42.5);
+console.log(employee1.getIntro())
 console.log(`Employee ${employee1.fullName} created`);
 console.log(`Job title is ${employee1.jobTitle}`);
 console.log(`Pay rate is $${employee1.payRate}`);
+
 
 employee1.promote("Sr. Graphic Artist", 46.75);
 console.log(
@@ -30,6 +37,7 @@ console.log(
 console.log();
 
 let employee2 = new Employee(2, "Sarah", "Lee", "Software Engineer", 50.0);
+console.log(employee2.getIntro())
 console.log(`Employee ${employee2.fullName} created`);
 console.log(`Job title is ${employee2.jobTitle}`);
 console.log(`Pay rate is $${employee2.payRate}`);
